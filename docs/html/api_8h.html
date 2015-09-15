@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>TheStorageHouse archiver: Файл D:/Programming/C++/NotReady/TheSTH_project/arch_src/api.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TheStorageHouse archiver
+   &#160;<span id="projectnumber">0.9.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_631c8d616a53be7ebd16faa42d888c63.html">Programming</a></li><li class="navelem"><a class="el" href="dir_8abfc9fc34f703896e66e9e36694b4c2.html">C++</a></li><li class="navelem"><a class="el" href="dir_867a1ce178cf0e68bfb550edce83bfcf.html">NotReady</a></li><li class="navelem"><a class="el" href="dir_6c6536adef0831219d0b8ceff6c1ee92.html">TheSTH_project</a></li><li class="navelem"><a class="el" href="dir_e97aa1ae278423dcccea49c6f44ebca9.html">arch_src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл, содержащий high-level API работы с архивом  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;Windows.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;direct.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="errcodes_8h_source.html">errcodes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="kernel_8h_source.html">kernel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stack_8h_source.html">stack.h</a>&quot;</code><br />
+</div>
+<p><a href="api_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a8e29ba55f0fe98d4aa3e27af3ffc7785"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a8e29ba55f0fe98d4aa3e27af3ffc7785">archive_addFile</a> (const char *archiveName, const char *fileName, const uint8_t compression)</td></tr>
+<tr class="memdesc:a8e29ba55f0fe98d4aa3e27af3ffc7785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавляет файл в архив  <a href="#a8e29ba55f0fe98d4aa3e27af3ffc7785">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8e29ba55f0fe98d4aa3e27af3ffc7785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e43be5320b019844c1a0539c2923e7e"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a2e43be5320b019844c1a0539c2923e7e">archive_extractFile</a> (const char *archiveName, const char *fileName, const char *dirPathOut)</td></tr>
+<tr class="memdesc:a2e43be5320b019844c1a0539c2923e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция извлекает файл из архива  <a href="#a2e43be5320b019844c1a0539c2923e7e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e43be5320b019844c1a0539c2923e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb71e4968ef0ccb54d7469b79162a673"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aeb71e4968ef0ccb54d7469b79162a673">archive_deleteFile</a> (const char *archiveName, const char *fileName)</td></tr>
+<tr class="memdesc:aeb71e4968ef0ccb54d7469b79162a673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция удаляет файл из архива  <a href="#aeb71e4968ef0ccb54d7469b79162a673">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeb71e4968ef0ccb54d7469b79162a673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a062253e1edac4acbe965e966542a8"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a42a062253e1edac4acbe965e966542a8">archive_getFileList</a> (const char *archiveName, void(*callback)(<a class="el" href="struct_file___header.html">File_Header</a> *fHead, void *data), const void *data)</td></tr>
+<tr class="memdesc:a42a062253e1edac4acbe965e966542a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получает список файлов архива  <a href="#a42a062253e1edac4acbe965e966542a8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a42a062253e1edac4acbe965e966542a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, содержащий high-level API работы с архивом </p>
+<dl class="section author"><dt>Автор</dt><dd>Никита Провоторов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Май 2015</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Необходимо сделать:</a></b></dt><dd>Функция тестирование архива на целостность </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a class="anchor" id="a8e29ba55f0fe98d4aa3e27af3ffc7785"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type archive_addFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>compression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавляет файл в архив </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archiveName</td><td>Полное имя архива </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>Полное имя файла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compression</td><td>Сжатие ; если сюда передан 0, то сжатие не будет выполняться, иначе будет</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_READ_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_WRITE_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_FILE_NOTEXISTS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOMEM</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOREADACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOWRITEACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NAME_TOOLONG</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN_FILETYPE</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_BADMARKER</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_OLDVERSION</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_FILENOTFOUND</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок</dd></dl>
+<p>Функция добавляет файл в архив </p>
+
+</div>
+</div>
+<a class="anchor" id="aeb71e4968ef0ccb54d7469b79162a673"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type archive_deleteFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция удаляет файл из архива </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archiveName</td><td>Полное имя архива </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>Имя файла в архиве</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOREADACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOMEM</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOWRITEACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NAME_TOOLONG</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN</td><td></td></tr>
+    <tr><td class="paramname">ERR_FILE_NOTEXISTS</td><td></td></tr>
+    <tr><td class="paramname">ERR_READ_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_WRITE_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_EOF</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN_FILETYPE</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_OLDVERSION</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_FILENOTFOUND</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_BADMARKER</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e43be5320b019844c1a0539c2923e7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type archive_extractFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dirPathOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция извлекает файл из архива </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archiveName</td><td>Полное имя архива </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>Имя файла в архиве </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dirPathOut</td><td>Полное имя каталога, в который требуется извлечь файл</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_DIR_NOTEXISTS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOREADACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOMEM</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOWRITEACCESS</td><td></td></tr>
+    <tr><td class="paramname">ERR_NAME_TOOLONG</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN</td><td></td></tr>
+    <tr><td class="paramname">ERR_FILE_NOTEXISTS</td><td></td></tr>
+    <tr><td class="paramname">ERR_READ_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_WRITE_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_EOF</td><td></td></tr>
+    <tr><td class="paramname">ERR_FILE_BADCRC</td><td></td></tr>
+    <tr><td class="paramname">ERR_UNKNOWN_FILETYPE</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_BADMARKER</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_OLDVERSION</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_FILENOTFOUND</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42a062253e1edac4acbe965e966542a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type archive_getFileList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="struct_file___header.html">File_Header</a> *fHead, void *data)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получает список файлов архива </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archiveName</td><td>Имя архива </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Функция обратного вызова ; будет вызвана каждый раз при нахождении нового файла в архиве ; в функцию будет переданы информация о файле и data без изменения </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Необязательный параметр ; дополнительный данные</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_READ_FAILED</td><td></td></tr>
+    <tr><td class="paramname">ERR_EOF</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_BADMARKER</td><td></td></tr>
+    <tr><td class="paramname">ERR_ARCH_OLDVERSION</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по TheStorageHouse archiver. Последние изменения: Чт 14 Май 2015 23:03:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

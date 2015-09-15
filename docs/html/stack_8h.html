@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>TheStorageHouse archiver: Файл D:/Programming/C++/NotReady/TheSTH_project/arch_src/stack.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TheStorageHouse archiver
+   &#160;<span id="projectnumber">0.9.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_631c8d616a53be7ebd16faa42d888c63.html">Programming</a></li><li class="navelem"><a class="el" href="dir_8abfc9fc34f703896e66e9e36694b4c2.html">C++</a></li><li class="navelem"><a class="el" href="dir_867a1ce178cf0e68bfb550edce83bfcf.html">NotReady</a></li><li class="navelem"><a class="el" href="dir_6c6536adef0831219d0b8ceff6c1ee92.html">TheSTH_project</a></li><li class="navelem"><a class="el" href="dir_e97aa1ae278423dcccea49c6f44ebca9.html">arch_src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл stack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Функции для работы со стеком  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="errcodes_8h_source.html">errcodes.h</a>&quot;</code><br />
+</div>
+<p><a href="stack_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_file_name.html">FileName</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_token.html">Token</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_array.html">Array</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a61c79791cf1f878cefab82e6222ea4bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61c79791cf1f878cefab82e6222ea4bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STACK_BLOCKSIZE</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a61c79791cf1f878cefab82e6222ea4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a706d08c170713b877a984144a4a617ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a706d08c170713b877a984144a4a617ff"></a>
+typedef <a class="el" href="struct_array.html">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Stack</b></td></tr>
+<tr class="separator:a706d08c170713b877a984144a4a617ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ab5dc9d077b3deb63a00ef5c1f0d19f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_array.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#ab5dc9d077b3deb63a00ef5c1f0d19f2a">Stack_Create</a> ()</td></tr>
+<tr class="separator:ab5dc9d077b3deb63a00ef5c1f0d19f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ddcda36fb88a69e1349f4ca3704757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a15ddcda36fb88a69e1349f4ca3704757">Stack_Destroy</a> (<a class="el" href="struct_array.html">Stack</a> *stack)</td></tr>
+<tr class="separator:a15ddcda36fb88a69e1349f4ca3704757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e553f452da267fb204db90b831eaff"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a91e553f452da267fb204db90b831eaff">Stack_Push</a> (<a class="el" href="struct_array.html">Stack</a> *stack, const <a class="el" href="struct_token.html">Token</a> *token)</td></tr>
+<tr class="separator:a91e553f452da267fb204db90b831eaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bff292682ae3cf30a5f515781c7c08"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#ad4bff292682ae3cf30a5f515781c7c08">Stack_Pop</a> (<a class="el" href="struct_array.html">Stack</a> *stack, <a class="el" href="struct_token.html">Token</a> *result)</td></tr>
+<tr class="separator:ad4bff292682ae3cf30a5f515781c7c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc76d6e5865236b0965cf1dae9df84ec"><td class="memItemLeft" align="right" valign="top">err_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#acc76d6e5865236b0965cf1dae9df84ec">Stack_Peek</a> (const <a class="el" href="struct_array.html">Stack</a> *stack, <a class="el" href="struct_token.html">Token</a> *result)</td></tr>
+<tr class="separator:acc76d6e5865236b0965cf1dae9df84ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c887aa4c984ae7b88cb3fc61e15c5f2"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a2c887aa4c984ae7b88cb3fc61e15c5f2">Stack_IsEmpty</a> (const <a class="el" href="struct_array.html">Stack</a> *stack)</td></tr>
+<tr class="separator:a2c887aa4c984ae7b88cb3fc61e15c5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Функции для работы со стеком </p>
+<dl class="section author"><dt>Автор</dt><dd>Никита Провоторов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Март 2015 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ab5dc9d077b3deb63a00ef5c1f0d19f2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_array.html">Stack</a>* Stack_Create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция создает стек</p>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>Не удалось создать стек (нет памяти) </td></tr>
+    <tr><td class="paramname">!NULL</td><td>Созданный стек </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a15ddcda36fb88a69e1349f4ca3704757"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stack_Destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_array.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция уничтожает стек, созданный ранее функцией Stack_Create</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stack</td><td>Уничтожаемый стек </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c887aa4c984ae7b88cb3fc61e15c5f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Stack_IsEmpty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_array.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция проверяет стек на пустоту</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stack</td><td>Стек</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Стек не пуст </td></tr>
+    <tr><td class="paramname">1</td><td>Стек пуст </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acc76d6e5865236b0965cf1dae9df84ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type Stack_Peek </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_array.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_token.html">Token</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция получает элемент с вершины стека</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stack</td><td>Стек </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Адрес, по которому будет записано значение с вершины stack</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_INDEX_OUT</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4bff292682ae3cf30a5f515781c7c08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type Stack_Pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_array.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_token.html">Token</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция снимает элемент с вершины стека</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stack</td><td>Стек </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Адрес, по которому будет записано значение с вершины stack</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_INDEX_OUT</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91e553f452da267fb204db90b831eaff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_type Stack_Push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_array.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_token.html">Token</a> *&#160;</td>
+          <td class="paramname"><em>token</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция добавляет элемент на вершину стека</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">stack</td><td>Стек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>Указатель на добавляемый элемент стека</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ERR_NO</td><td></td></tr>
+    <tr><td class="paramname">ERR_PARAM_INVALID</td><td></td></tr>
+    <tr><td class="paramname">ERR_NOMEM</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="errcodes_8h.html" title="Описание всех кодов ошибок ">errcodes.h</a> Описание кодов ошибок </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по TheStorageHouse archiver. Последние изменения: Чт 14 Май 2015 23:03:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

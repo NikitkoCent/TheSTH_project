@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>TheStorageHouse archiver: Исходный файл D:/Programming/C++/NotReady/TheSTH_project/arch_src/file_header.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TheStorageHouse archiver
+   &#160;<span id="projectnumber">0.9.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_631c8d616a53be7ebd16faa42d888c63.html">Programming</a></li><li class="navelem"><a class="el" href="dir_8abfc9fc34f703896e66e9e36694b4c2.html">C++</a></li><li class="navelem"><a class="el" href="dir_867a1ce178cf0e68bfb550edce83bfcf.html">NotReady</a></li><li class="navelem"><a class="el" href="dir_6c6536adef0831219d0b8ceff6c1ee92.html">TheSTH_project</a></li><li class="navelem"><a class="el" href="dir_e97aa1ae278423dcccea49c6f44ebca9.html">arch_src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">file_header.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="file__header_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FILE_HEADER_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FILE_HEADER_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bf__write__read_8h.html">bf_write_read.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="crc_8h.html">crc.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="errcodes_8h.html">errcodes.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define FILENAMELENGTH_MAX 512</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_file___header.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_file___header.html#a56b2faaf93fa5c5474ded98530d7a630">   23</a></span>&#160;    uint16_t <a class="code" href="struct_file___header.html#a56b2faaf93fa5c5474ded98530d7a630">headCrc</a>;                       </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_file___header.html#a1a60596cb0237374c7792d826b4d8283">   24</a></span>&#160;    uint16_t <a class="code" href="struct_file___header.html#a1a60596cb0237374c7792d826b4d8283">fileNameLength</a>;                </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_file___header.html#a1890a6ec6d263ec0dd085471b90f8621">   25</a></span>&#160;    uint8_t fileName[FILENAMELENGTH_MAX];   </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_file___header.html#a2e7634130cbb8b5509bd9f7b0b641a84">   26</a></span>&#160;    uint16_t <a class="code" href="struct_file___header.html#a2e7634130cbb8b5509bd9f7b0b641a84">attr</a>;                          </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_file___header.html#a7e5575b2266da23e0d9a5dff2da9881a">   27</a></span>&#160;    uint8_t <a class="code" href="struct_file___header.html#a7e5575b2266da23e0d9a5dff2da9881a">method</a>;                         </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_file___header.html#a42ff0ccd7dcafbc662acd72dd5a0b3e5">   28</a></span>&#160;    uint64_t <a class="code" href="struct_file___header.html#a42ff0ccd7dcafbc662acd72dd5a0b3e5">fileSize</a>;                      </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_file___header.html#a040ab4676e8de8bb7b657e44c680e06d">   29</a></span>&#160;    uint32_t <a class="code" href="struct_file___header.html#a040ab4676e8de8bb7b657e44c680e06d">fileCrc</a>;                       </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="struct_file___header.html">File_Header</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;err_type <a class="code" href="file__header_8h.html#a917a993eada507f4a48076592371d968">File_Header_checkCrc</a>(<span class="keyword">const</span> <a class="code" href="struct_file___header.html">File_Header</a> *fHead);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="file__header_8h.html#aa259e93ebaed677cb5328523faef0564">File_Header_setCrc</a>(<a class="code" href="struct_file___header.html">File_Header</a> *fHead);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;err_type <a class="code" href="file__header_8h.html#aa97fccfea114f96df7df319c103a06e7">File_Header_fwrite</a>(FILE *f, <span class="keyword">const</span> <a class="code" href="struct_file___header.html">File_Header</a> *fHead);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;err_type <a class="code" href="file__header_8h.html#a69365f4707e318ef5252812e13adc547">File_Header_fread</a>(FILE *f, <a class="code" href="struct_file___header.html">File_Header</a> *fHead);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;uint16_t <a class="code" href="file__header_8h.html#a922b9ae21dc0e56e19f5aa7db451991f">File_Header_getSize</a>(<span class="keyword">const</span> <a class="code" href="struct_file___header.html">File_Header</a> *fHead);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="file__header_8h_html_a69365f4707e318ef5252812e13adc547"><div class="ttname"><a href="file__header_8h.html#a69365f4707e318ef5252812e13adc547">File_Header_fread</a></div><div class="ttdeci">err_type File_Header_fread(FILE *f, File_Header *fHead)</div><div class="ttdoc">Чтение метаданных из файла </div><div class="ttdef"><b>Definition:</b> file_header.c:62</div></div>
+<div class="ttc" id="file__header_8h_html_a922b9ae21dc0e56e19f5aa7db451991f"><div class="ttname"><a href="file__header_8h.html#a922b9ae21dc0e56e19f5aa7db451991f">File_Header_getSize</a></div><div class="ttdeci">uint16_t File_Header_getSize(const File_Header *fHead)</div><div class="ttdoc">Получение размера в байтах заполненной структуры </div><div class="ttdef"><b>Definition:</b> file_header.c:88</div></div>
+<div class="ttc" id="file__header_8h_html_aa97fccfea114f96df7df319c103a06e7"><div class="ttname"><a href="file__header_8h.html#aa97fccfea114f96df7df319c103a06e7">File_Header_fwrite</a></div><div class="ttdeci">err_type File_Header_fwrite(FILE *f, const File_Header *fHead)</div><div class="ttdoc">Запись метаданных в файл </div><div class="ttdef"><b>Definition:</b> file_header.c:35</div></div>
+<div class="ttc" id="struct_file___header_html_a2e7634130cbb8b5509bd9f7b0b641a84"><div class="ttname"><a href="struct_file___header.html#a2e7634130cbb8b5509bd9f7b0b641a84">File_Header::attr</a></div><div class="ttdeci">uint16_t attr</div><div class="ttdoc">Аттрибуты файла </div><div class="ttdef"><b>Definition:</b> file_header.h:26</div></div>
+<div class="ttc" id="crc_8h_html"><div class="ttname"><a href="crc_8h.html">crc.h</a></div><div class="ttdoc">Прототипы функций для подсчёта CRC. </div></div>
+<div class="ttc" id="file__header_8h_html_a917a993eada507f4a48076592371d968"><div class="ttname"><a href="file__header_8h.html#a917a993eada507f4a48076592371d968">File_Header_checkCrc</a></div><div class="ttdeci">err_type File_Header_checkCrc(const File_Header *fHead)</div><div class="ttdef"><b>Definition:</b> file_header.c:3</div></div>
+<div class="ttc" id="struct_file___header_html_a7e5575b2266da23e0d9a5dff2da9881a"><div class="ttname"><a href="struct_file___header.html#a7e5575b2266da23e0d9a5dff2da9881a">File_Header::method</a></div><div class="ttdeci">uint8_t method</div><div class="ttdoc">Метод сжатия </div><div class="ttdef"><b>Definition:</b> file_header.h:27</div></div>
+<div class="ttc" id="struct_file___header_html_a56b2faaf93fa5c5474ded98530d7a630"><div class="ttname"><a href="struct_file___header.html#a56b2faaf93fa5c5474ded98530d7a630">File_Header::headCrc</a></div><div class="ttdeci">uint16_t headCrc</div><div class="ttdoc">CRC всей структуры, за исключением fileCrc. </div><div class="ttdef"><b>Definition:</b> file_header.h:23</div></div>
+<div class="ttc" id="bf__write__read_8h_html"><div class="ttname"><a href="bf__write__read_8h.html">bf_write_read.h</a></div><div class="ttdoc">Прототипы функций двоичного ввода-вывода в файл </div></div>
+<div class="ttc" id="struct_file___header_html_a040ab4676e8de8bb7b657e44c680e06d"><div class="ttname"><a href="struct_file___header.html#a040ab4676e8de8bb7b657e44c680e06d">File_Header::fileCrc</a></div><div class="ttdeci">uint32_t fileCrc</div><div class="ttdoc">CRC файла </div><div class="ttdef"><b>Definition:</b> file_header.h:29</div></div>
+<div class="ttc" id="errcodes_8h_html"><div class="ttname"><a href="errcodes_8h.html">errcodes.h</a></div><div class="ttdoc">Описание всех кодов ошибок </div></div>
+<div class="ttc" id="struct_file___header_html_a1a60596cb0237374c7792d826b4d8283"><div class="ttname"><a href="struct_file___header.html#a1a60596cb0237374c7792d826b4d8283">File_Header::fileNameLength</a></div><div class="ttdeci">uint16_t fileNameLength</div><div class="ttdoc">Длина имени файла </div><div class="ttdef"><b>Definition:</b> file_header.h:24</div></div>
+<div class="ttc" id="struct_file___header_html_a42ff0ccd7dcafbc662acd72dd5a0b3e5"><div class="ttname"><a href="struct_file___header.html#a42ff0ccd7dcafbc662acd72dd5a0b3e5">File_Header::fileSize</a></div><div class="ttdeci">uint64_t fileSize</div><div class="ttdoc">Размер файла </div><div class="ttdef"><b>Definition:</b> file_header.h:28</div></div>
+<div class="ttc" id="file__header_8h_html_aa259e93ebaed677cb5328523faef0564"><div class="ttname"><a href="file__header_8h.html#aa259e93ebaed677cb5328523faef0564">File_Header_setCrc</a></div><div class="ttdeci">void File_Header_setCrc(File_Header *fHead)</div><div class="ttdef"><b>Definition:</b> file_header.c:21</div></div>
+<div class="ttc" id="struct_file___header_html"><div class="ttname"><a href="struct_file___header.html">File_Header</a></div><div class="ttdef"><b>Definition:</b> file_header.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по TheStorageHouse archiver. Последние изменения: Чт 14 Май 2015 23:03:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

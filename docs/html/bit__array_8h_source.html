@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>TheStorageHouse archiver: Исходный файл D:/Programming/C++/NotReady/TheSTH_project/arch_src/bit_array.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TheStorageHouse archiver
+   &#160;<span id="projectnumber">0.9.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_631c8d616a53be7ebd16faa42d888c63.html">Programming</a></li><li class="navelem"><a class="el" href="dir_8abfc9fc34f703896e66e9e36694b4c2.html">C++</a></li><li class="navelem"><a class="el" href="dir_867a1ce178cf0e68bfb550edce83bfcf.html">NotReady</a></li><li class="navelem"><a class="el" href="dir_6c6536adef0831219d0b8ceff6c1ee92.html">TheSTH_project</a></li><li class="navelem"><a class="el" href="dir_e97aa1ae278423dcccea49c6f44ebca9.html">arch_src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bit_array.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bit__array_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef BIT_ARRAY_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define BIT_ARRAY_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="errcodes_8h.html">errcodes.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_bit_array.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_bit_array.html">BitArray</a> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    uint8_t *arr;           </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    uint64_t length;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    uint64_t byteLength;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    uint64_t size;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} *<a class="code" href="struct_bit_array.html">BitArray</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="struct_bit_array.html">BitArray</a> <a class="code" href="bit__array_8h.html#a84ef93375739e723d8d7d0b65c95ba34">BitArray_create</a>(<span class="keyword">const</span> uint64_t length);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bit__array_8h.html#ab51d41c9d09d7d7f0fda7fc5b6eaf563">BitArray_destroy</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;_inline err_type <a class="code" href="bit__array_8h.html#a163a92ec47c6c77e7340924cf9305c3a">BitArray_isInitialized</a>(<span class="keyword">const</span> <a class="code" href="struct_bit_array.html">BitArray</a> bitArray);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;err_type <a class="code" href="bit__array_8h.html#a8ac173b46b51eb56620da3ce216c8632">BitArray_setBit</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray, <span class="keyword">const</span> uint64_t index, <span class="keyword">const</span> uint8_t bit);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;err_type <a class="code" href="bit__array_8h.html#add0295aad134943fd06ce3fc7c36ef1c">BitArray_getBit</a>(<span class="keyword">const</span> <a class="code" href="struct_bit_array.html">BitArray</a> bitArray, <span class="keyword">const</span> uint64_t index, uint8_t *bit);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bit__array_8h.html#a49ca758b5bbaae541e58ebaca38a8c98">BitArray_setValue</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray, <span class="keyword">const</span> <span class="keywordtype">void</span> *value, <span class="keyword">const</span> uint64_t valueSize);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;uint64_t <a class="code" href="bit__array_8h.html#a2eca4ddaf7b5df8d0ad7fc65eba337bd">BitArray_getLength</a>(<span class="keyword">const</span> <a class="code" href="struct_bit_array.html">BitArray</a> bitArray);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;err_type <a class="code" href="bit__array_8h.html#af4a432b6ddabc1a22cb90832e5709b90">BitArray_pushBack</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray, <span class="keyword">const</span> uint8_t bit);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;err_type <a class="code" href="bit__array_8h.html#a38aa47ab5d90c49441255f58c4edc03c">BitArray_popBack</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;err_type <a class="code" href="bit__array_8h.html#abfc6260a2d8a72fdcf1a9ef40e61bf9b">BitArray_copy</a>(<a class="code" href="struct_bit_array.html">BitArray</a> dst, <span class="keyword">const</span> <a class="code" href="struct_bit_array.html">BitArray</a> src);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;err_type <a class="code" href="bit__array_8h.html#a7ff7608d26b1116d3fcf7f1ebb435e76">BitArray_concatenate</a>(<a class="code" href="struct_bit_array.html">BitArray</a> dst, <span class="keyword">const</span> <a class="code" href="struct_bit_array.html">BitArray</a> src);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bit__array_8h.html#a090296a789d4e4fd4e430438fda6b390">BitArray_reset</a>(<a class="code" href="struct_bit_array.html">BitArray</a> bitArray);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="bit__array_8h_html_add0295aad134943fd06ce3fc7c36ef1c"><div class="ttname"><a href="bit__array_8h.html#add0295aad134943fd06ce3fc7c36ef1c">BitArray_getBit</a></div><div class="ttdeci">err_type BitArray_getBit(const BitArray bitArray, const uint64_t index, uint8_t *bit)</div><div class="ttdef"><b>Definition:</b> bit_array.c:83</div></div>
+<div class="ttc" id="bit__array_8h_html_a2eca4ddaf7b5df8d0ad7fc65eba337bd"><div class="ttname"><a href="bit__array_8h.html#a2eca4ddaf7b5df8d0ad7fc65eba337bd">BitArray_getLength</a></div><div class="ttdeci">uint64_t BitArray_getLength(const BitArray bitArray)</div><div class="ttdef"><b>Definition:</b> bit_array.c:109</div></div>
+<div class="ttc" id="bit__array_8h_html_a7ff7608d26b1116d3fcf7f1ebb435e76"><div class="ttname"><a href="bit__array_8h.html#a7ff7608d26b1116d3fcf7f1ebb435e76">BitArray_concatenate</a></div><div class="ttdeci">err_type BitArray_concatenate(BitArray dst, const BitArray src)</div><div class="ttdef"><b>Definition:</b> bit_array.c:182</div></div>
+<div class="ttc" id="bit__array_8h_html_a163a92ec47c6c77e7340924cf9305c3a"><div class="ttname"><a href="bit__array_8h.html#a163a92ec47c6c77e7340924cf9305c3a">BitArray_isInitialized</a></div><div class="ttdeci">_inline err_type BitArray_isInitialized(const BitArray bitArray)</div><div class="ttdef"><b>Definition:</b> bit_array.c:51</div></div>
+<div class="ttc" id="bit__array_8h_html_a38aa47ab5d90c49441255f58c4edc03c"><div class="ttname"><a href="bit__array_8h.html#a38aa47ab5d90c49441255f58c4edc03c">BitArray_popBack</a></div><div class="ttdeci">err_type BitArray_popBack(BitArray bitArray)</div><div class="ttdef"><b>Definition:</b> bit_array.c:143</div></div>
+<div class="ttc" id="errcodes_8h_html"><div class="ttname"><a href="errcodes_8h.html">errcodes.h</a></div><div class="ttdoc">Описание всех кодов ошибок </div></div>
+<div class="ttc" id="bit__array_8h_html_abfc6260a2d8a72fdcf1a9ef40e61bf9b"><div class="ttname"><a href="bit__array_8h.html#abfc6260a2d8a72fdcf1a9ef40e61bf9b">BitArray_copy</a></div><div class="ttdeci">err_type BitArray_copy(BitArray dst, const BitArray src)</div><div class="ttdef"><b>Definition:</b> bit_array.c:169</div></div>
+<div class="ttc" id="bit__array_8h_html_a49ca758b5bbaae541e58ebaca38a8c98"><div class="ttname"><a href="bit__array_8h.html#a49ca758b5bbaae541e58ebaca38a8c98">BitArray_setValue</a></div><div class="ttdeci">void BitArray_setValue(BitArray bitArray, const void *value, const uint64_t valueSize)</div><div class="ttdef"><b>Definition:</b> bit_array.c:158</div></div>
+<div class="ttc" id="bit__array_8h_html_ab51d41c9d09d7d7f0fda7fc5b6eaf563"><div class="ttname"><a href="bit__array_8h.html#ab51d41c9d09d7d7f0fda7fc5b6eaf563">BitArray_destroy</a></div><div class="ttdeci">void BitArray_destroy(BitArray bitArray)</div><div class="ttdef"><b>Definition:</b> bit_array.c:32</div></div>
+<div class="ttc" id="struct_bit_array_html"><div class="ttname"><a href="struct_bit_array.html">BitArray</a></div><div class="ttdef"><b>Definition:</b> bit_array.h:16</div></div>
+<div class="ttc" id="bit__array_8h_html_af4a432b6ddabc1a22cb90832e5709b90"><div class="ttname"><a href="bit__array_8h.html#af4a432b6ddabc1a22cb90832e5709b90">BitArray_pushBack</a></div><div class="ttdeci">err_type BitArray_pushBack(BitArray bitArray, const uint8_t bit)</div><div class="ttdef"><b>Definition:</b> bit_array.c:118</div></div>
+<div class="ttc" id="bit__array_8h_html_a090296a789d4e4fd4e430438fda6b390"><div class="ttname"><a href="bit__array_8h.html#a090296a789d4e4fd4e430438fda6b390">BitArray_reset</a></div><div class="ttdeci">void BitArray_reset(BitArray bitArray)</div><div class="ttdef"><b>Definition:</b> bit_array.c:203</div></div>
+<div class="ttc" id="bit__array_8h_html_a84ef93375739e723d8d7d0b65c95ba34"><div class="ttname"><a href="bit__array_8h.html#a84ef93375739e723d8d7d0b65c95ba34">BitArray_create</a></div><div class="ttdeci">BitArray BitArray_create(const uint64_t length)</div><div class="ttdef"><b>Definition:</b> bit_array.c:3</div></div>
+<div class="ttc" id="bit__array_8h_html_a8ac173b46b51eb56620da3ce216c8632"><div class="ttname"><a href="bit__array_8h.html#a8ac173b46b51eb56620da3ce216c8632">BitArray_setBit</a></div><div class="ttdeci">err_type BitArray_setBit(BitArray bitArray, const uint64_t index, const uint8_t bit)</div><div class="ttdef"><b>Definition:</b> bit_array.c:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по TheStorageHouse archiver. Последние изменения: Чт 14 Май 2015 23:03:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>TheStorageHouse archiver: Исходный файл D:/Programming/C++/NotReady/TheSTH_project/arch_src/fgk_tree.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TheStorageHouse archiver
+   &#160;<span id="projectnumber">0.9.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_631c8d616a53be7ebd16faa42d888c63.html">Programming</a></li><li class="navelem"><a class="el" href="dir_8abfc9fc34f703896e66e9e36694b4c2.html">C++</a></li><li class="navelem"><a class="el" href="dir_867a1ce178cf0e68bfb550edce83bfcf.html">NotReady</a></li><li class="navelem"><a class="el" href="dir_6c6536adef0831219d0b8ceff6c1ee92.html">TheSTH_project</a></li><li class="navelem"><a class="el" href="dir_e97aa1ae278423dcccea49c6f44ebca9.html">arch_src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">fgk_tree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fgk__tree_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FGK_TREE</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FGK_TREE</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="errcodes_8h.html">errcodes.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bit__array_8h.html">bit_array.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define NOTBYTE (UINT16_MAX)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define NULLNODEBYTE (UINT16_MAX - 1)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define FILEENDBYTE (UINT16_MAX - 2)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_node.html">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    uint16_t byte;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    uint64_t weight;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> *next;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> *prev;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> *right;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> *left;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> *parent;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <a class="code" href="struct_node.html">Node</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_list.html">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_list.html">List</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="struct_node.html">Node</a> *start;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="struct_node.html">Node</a> *end;              <span class="comment">//&quot;0-node&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="struct_node.html">Node</a> *byteNodes[256];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} *<a class="code" href="struct_list.html">FGKTree</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="struct_list.html">FGKTree</a> <a class="code" href="fgk__tree_8h.html#abdb8a5067de2f1c8cdcc6a5e34a2b871">FGKTree_create</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fgk__tree_8h.html#a63d92f32e23d88311d5b6c7acac82c5b">FGKTree_destroy</a>(<a class="code" href="struct_list.html">FGKTree</a> tree);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;err_type <a class="code" href="fgk__tree_8h.html#a0acf4f2567122d7e86495a92407bf41d">FGKTree_getNullNodeSymbol</a>(<span class="keyword">const</span> <a class="code" href="struct_list.html">FGKTree</a> tree, <a class="code" href="struct_bit_array.html">BitArray</a> result);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;err_type <a class="code" href="fgk__tree_8h.html#afdbf3581efc988b2c17d13f5661e5333">FGKTree_getFileEndSymbol</a>(<span class="keyword">const</span> <a class="code" href="struct_list.html">FGKTree</a> tree, <a class="code" href="struct_bit_array.html">BitArray</a> result);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;err_type <a class="code" href="fgk__tree_8h.html#aa2c9b149ac4306ee4f75d83321b128f1">FGKTree_getByteCode</a>(<span class="keyword">const</span> <a class="code" href="struct_list.html">FGKTree</a> tree, <span class="keyword">const</span> uint8_t byte, <a class="code" href="struct_bit_array.html">BitArray</a> result);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;err_type <a class="code" href="fgk__tree_8h.html#a7b328de9769b4d8c1e424ffd9bb5fcd7">FGKTree_update</a>(<a class="code" href="struct_list.html">FGKTree</a> tree, <span class="keyword">const</span> uint8_t byte);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;err_type <a class="code" href="fgk__tree_8h.html#a716825444127d3ba7f4b4b75612bac7b">FGKTree_addByte</a>(<a class="code" href="struct_list.html">FGKTree</a> tree, <span class="keyword">const</span> uint8_t byte);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="fgk__tree_8h_html_afdbf3581efc988b2c17d13f5661e5333"><div class="ttname"><a href="fgk__tree_8h.html#afdbf3581efc988b2c17d13f5661e5333">FGKTree_getFileEndSymbol</a></div><div class="ttdeci">err_type FGKTree_getFileEndSymbol(const FGKTree tree, BitArray result)</div><div class="ttdoc">Функция возвращает текущий код конца файла </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:118</div></div>
+<div class="ttc" id="fgk__tree_8h_html_a7b328de9769b4d8c1e424ffd9bb5fcd7"><div class="ttname"><a href="fgk__tree_8h.html#a7b328de9769b4d8c1e424ffd9bb5fcd7">FGKTree_update</a></div><div class="ttdeci">err_type FGKTree_update(FGKTree tree, const uint8_t byte)</div><div class="ttdoc">Функция обновляет дерево Хаффмана указанным байтом </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:225</div></div>
+<div class="ttc" id="errcodes_8h_html"><div class="ttname"><a href="errcodes_8h.html">errcodes.h</a></div><div class="ttdoc">Описание всех кодов ошибок </div></div>
+<div class="ttc" id="bit__array_8h_html"><div class="ttname"><a href="bit__array_8h.html">bit_array.h</a></div></div>
+<div class="ttc" id="fgk__tree_8h_html_a63d92f32e23d88311d5b6c7acac82c5b"><div class="ttname"><a href="fgk__tree_8h.html#a63d92f32e23d88311d5b6c7acac82c5b">FGKTree_destroy</a></div><div class="ttdeci">void FGKTree_destroy(FGKTree tree)</div><div class="ttdoc">Функция уничтожает дерево Хаффмана </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:46</div></div>
+<div class="ttc" id="struct_bit_array_html"><div class="ttname"><a href="struct_bit_array.html">BitArray</a></div><div class="ttdef"><b>Definition:</b> bit_array.h:16</div></div>
+<div class="ttc" id="fgk__tree_8h_html_aa2c9b149ac4306ee4f75d83321b128f1"><div class="ttname"><a href="fgk__tree_8h.html#aa2c9b149ac4306ee4f75d83321b128f1">FGKTree_getByteCode</a></div><div class="ttdeci">err_type FGKTree_getByteCode(const FGKTree tree, const uint8_t byte, BitArray result)</div><div class="ttdoc">Функция возвращает текущий код указанного байта </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:173</div></div>
+<div class="ttc" id="fgk__tree_8h_html_abdb8a5067de2f1c8cdcc6a5e34a2b871"><div class="ttname"><a href="fgk__tree_8h.html#abdb8a5067de2f1c8cdcc6a5e34a2b871">FGKTree_create</a></div><div class="ttdeci">FGKTree FGKTree_create()</div><div class="ttdoc">Функция создаёт дерево Хаффмана </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:3</div></div>
+<div class="ttc" id="fgk__tree_8h_html_a716825444127d3ba7f4b4b75612bac7b"><div class="ttname"><a href="fgk__tree_8h.html#a716825444127d3ba7f4b4b75612bac7b">FGKTree_addByte</a></div><div class="ttdeci">err_type FGKTree_addByte(FGKTree tree, const uint8_t byte)</div><div class="ttdoc">Функция добавляет в дерево Хаффмана узел с указанным значением байта </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:285</div></div>
+<div class="ttc" id="fgk__tree_8h_html_a0acf4f2567122d7e86495a92407bf41d"><div class="ttname"><a href="fgk__tree_8h.html#a0acf4f2567122d7e86495a92407bf41d">FGKTree_getNullNodeSymbol</a></div><div class="ttdeci">err_type FGKTree_getNullNodeSymbol(const FGKTree tree, BitArray result)</div><div class="ttdoc">Функция возвращает текущий код "0-node" символа </div><div class="ttdef"><b>Definition:</b> fgk_tree.c:61</div></div>
+<div class="ttc" id="struct_list_html"><div class="ttname"><a href="struct_list.html">List</a></div><div class="ttdef"><b>Definition:</b> fgk_tree.h:31</div></div>
+<div class="ttc" id="struct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> fgk_tree.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по TheStorageHouse archiver. Последние изменения: Чт 14 Май 2015 23:03:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>
