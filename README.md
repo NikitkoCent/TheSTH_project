@@ -7,3 +7,6 @@ Beta version
   
 # console_app
   source code of app with TUI
+  
+# docs
+  documentation for archiver's function's source codes
